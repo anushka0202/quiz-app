@@ -1,0 +1,215 @@
+body {
+  margin: 0;
+}
+
+.home {
+  background: linear-gradient(
+    180deg,
+    rgba(175, 156, 243, 0) 7.92%,
+    #af9cf3 86.48%
+  );
+  background-blend-mode: multiply;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.start-button {
+  color: #fff;
+  font-family: "Nunito", sans-serif;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 67px; /* 139.583% */
+  width: 70vw;
+  padding: 1%;
+  border-radius: 80px;
+  border: none;
+  background: #ff3b3f;
+  cursor: pointer;
+}
+
+.quiz-text {
+  text-align: center;
+  color: #ff3b3c;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 90px; /* 112.5% */
+}
+
+.question-page {
+  background: #af9cf3;
+  background-blend-mode: multiply;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.question-container {
+  top: 20vh;
+  width: 100vw;
+  border-radius: 60px 60px 0px 0px;
+  background: #fff;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  position: relative;
+  justify-content: flex-start;
+}
+
+.progress-container {
+  width: 20vw;
+  position: absolute;
+  top: -5%; /* Position at the top of the question-container */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center horizontally */
+  display: flex;
+  justify-content: center; /* Center vertically within the progress-container */
+  z-index: 2;
+}
+
+.timer {
+  color: #000;
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 34px;
+  text-align: end;
+  margin: 2%;
+  height: 20vh;
+  position: absolute;
+  display: flex;
+}
+
+.question {
+  color: #000;
+  font-family: "Nunito", sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 56px; /* 140% */
+  padding: 5%;
+}
+
+.option {
+  border-radius: 20px;
+  background: #f3f4fa;
+  margin: 2%;
+  padding: 4%;
+  cursor: pointer;
+}
+
+.selected {
+  border: 2px solid #44b77b;
+}
+
+.option-text {
+  color: #000;
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 45px; /* 160.714% */
+  padding: 2%;
+  cursor: pointer;
+}
+
+/* Create a custom radio button using a pseudo-element */
+.option label:before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #333;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+/* Hiding the actual radio button */
+.custom-radio {
+  position: absolute;
+  opacity: 0;
+}
+
+/* Style the custom radio button when it's checked */
+.option input[type="radio"]:checked + label::before {
+  background-color: #35d299;
+  border-color: #35d299;
+}
+
+.report-title {
+  color: #000;
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 56px; /* 100% */
+  padding: 4%;
+  text-align: center;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin: 2%;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.report {
+  border-radius: 20px;
+  background: rgba(68, 183, 123, 0.1167); /* Use RGBA color with opacity */
+  margin: 2%;
+  padding: 4%;
+  display: flex;
+  justify-content: left;
+
+  color: #000;
+  font-family: "Nunito", sans-serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 34px;
+}
+
+.gauge-chart {
+  position: absolute;
+  z-index: 1;
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  top: 0;
+  padding: 0;
+}
+.gauge-circle {
+  position: absolute;
+  z-index: 2;
+  width: 25vw;
+  display: flex;
+  justify-content: center;
+}
+
+.percentage {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  position: absolute;
+  z-index: 3;
+
+  color: #1e1e28;
+  font-family: "Nunito";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 1000;
+  line-height: 67px; /* 104.688% */
+}

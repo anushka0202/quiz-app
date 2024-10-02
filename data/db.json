@@ -1,0 +1,98 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "text": "What is the capital of France?",
+      "image": "/paris.jpg",
+      "options": [
+        {
+          "id": 1,
+          "text": "Paris",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "text": "London",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "text": "Berlin",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "Madrid",
+          "isCorrect": false
+        }
+      ],
+      "nextQuestionId": 2,
+      "selectedOptions": [
+        1
+      ],
+      "timer": 5
+    },
+    {
+      "id": 2,
+      "text": "Which planet is known as the Red Planet?",
+      "options": [
+        {
+          "id": 5,
+          "text": "Mars",
+          "isCorrect": true
+        },
+        {
+          "id": 6,
+          "text": "Venus",
+          "isCorrect": false
+        },
+        {
+          "id": 7,
+          "text": "Jupiter",
+          "isCorrect": false
+        },
+        {
+          "id": 8,
+          "text": "Saturn",
+          "isCorrect": false
+        }
+      ],
+      "nextQuestionId": 3,
+      "selectedOptions": [
+        8
+      ],
+      "timer": 2
+    },
+    {
+      "id": 3,
+      "text": "What is 2 + 2?",
+      "options": [
+        {
+          "id": 9,
+          "text": "3",
+          "isCorrect": false
+        },
+        {
+          "id": 10,
+          "text": "4",
+          "isCorrect": true
+        },
+        {
+          "id": 11,
+          "text": "5",
+          "isCorrect": false
+        },
+        {
+          "id": 12,
+          "text": "6",
+          "isCorrect": false
+        }
+      ],
+      "nextQuestionId": null,
+      "selectedOptions": [
+        10
+      ],
+      "timer": 1
+    }
+  ]
+}
